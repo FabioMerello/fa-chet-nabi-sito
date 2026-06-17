@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Pizze · Fà ch'et n'abi – Gorzegno (CN)</title>
+  <meta name="description" content="Il menu delle pizze del Bar Pizzeria Fà ch'et n'abi di Gorzegno: classiche, speciali delle Langhe, bianche. Prodotti locali e fascia di prezzo 10–20€." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">F</span>
+        <span class="logo-text">Fà ch'et n'abi<small>Bar · Pizzeria · Langhe</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="index.html#storia">La Storia</a>
+        <a href="index.html#info">Info & Orari</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="tel:+393381653446" class="btn btn-primary nav-cta">📞 Chiamaci</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header" style="background-image: linear-gradient(rgba(20,16,13,.78), rgba(20,16,13,.92)), url('img/pizza-margherita.jpg');">
+      <div class="container">
+        <span class="eyebrow">Forno acceso dal venerdì</span>
+        <h1>Il Nostro Menu<br/><span class="accent">delle Pizze</span></h1>
+        <p class="lead">Impasto a lunga lievitazione, pomodoro di qualità, mozzarella fior di latte e i sapori delle Langhe in ogni morso. Fascia di prezzo <strong>10–20€</strong>.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters" id="filters" role="tablist" aria-label="Filtra le pizze">
+          <button class="filter-btn active" data-filter="all">Tutte</button>
+          <button class="filter-btn" data-filter="classiche">Classiche</button>
+          <button class="filter-btn" data-filter="langhe">Speciali delle Langhe</button>
+          <button class="filter-btn" data-filter="bianche">Bianche</button>
+        </div>
+
+        <div class="pizza-grid" id="pizzaGrid">
+          <article class="pizza-card" data-category="classiche">
+            <div class="pizza-head"><h3>Margherita</h3><span class="price">8€</span></div>
+            <p class="ingredients">Pomodoro San Marzano, fior di latte, basilico fresco, olio EVO.</p>
+            <span class="tag">Classica</span>
+          </article>
+          <article class="pizza-card" data-category="classiche">
+            <div class="pizza-head"><h3>Marinara</h3><span class="price">7€</span></div>
+            <p class="ingredients">Pomodoro, aglio, origano, olio EVO. Semplice come piace a noi.</p>
+            <span class="tag">Classica</span>
+          </article>
+          <article class="pizza-card" data-category="classiche">
+            <div class="pizza-head"><h3>Diavola</h3><span class="price">10€</span></div>
+            <p class="ingredients">Pomodoro, fior di latte, salame piccante, peperoncino fresco.</p>
+            <span class="tag">Classica</span>
+          </article>
+          <article class="pizza-card" data-category="classiche">
+            <div class="pizza-head"><h3>Capricciosa</h3><span class="price">12€</span></div>
+            <p class="ingredients">Pomodoro, fior di latte, prosciutto cotto, carciofini, funghi, olive nere.</p>
+            <span class="tag">Classica</span>
+          </article>
+          <article class="pizza-card" data-category="classiche">
+            <div class="pizza-head"><h3>Quattro Formaggi</h3><span class="price">12€</span></div>
+            <p class="ingredients">Fior di latte, gorgonzola DOP, fontina, grana padano.</p>
+            <span class="tag">Classica</span>
+          </article>
+
+          <article class="pizza-card" data-category="langhe">
+            
+            <div class="pizza-head"><h3>Langhetta</h3><span class="price">16€</span></div>
+            <p class="ingredients">Fior di latte, crudo di Cuneo, scaglie di Castelmagno DOP, nocciole Tonda Gentile tostate.</p>
+            <span class="tag tag-accent">Speciale Langhe</span>
+          </article>
+          <article class="pizza-card" data-category="langhe">
+            
+            <div class="pizza-head"><h3>Gorzegno</h3><span class="price">17€</span></div>
+            <p class="ingredients">Crema di zucca, salsiccia di Bra, Raschera DOP, granella di nocciole delle Langhe.</p>
+            <span class="tag tag-accent">Speciale Langhe</span>
+          </article>
+          <article class="pizza-card" data-category="langhe">
+            <div class="pizza-head"><h3>Boschiva</h3><span class="price">15€</span></div>
+            <p class="ingredients">Pomodoro, fior di latte, porcini freschi delle colline, prezzemolo, olio al tartufo.</p>
+            <span class="tag tag-accent">Speciale Langhe</span>
+          </article>
+          <article class="pizza-card" data-category="langhe">
+            
+            <div class="pizza-head"><h3>Tre Sorelle</h3><span class="price">18€</span></div>
+            <p class="ingredients">Fior di latte, robiola di Roccaverano DOP, crudo, fichi caramellati, rucola.</p>
+            <span class="tag tag-accent">Speciale Langhe</span>
+          </article>
+          <article class="pizza-card" data-category="langhe">
+            <div class="pizza-head"><h3>Vignaiola</h3><span class="price">16€</span></div>
+            <p class="ingredients">Pomodoro, fior di latte, salame nostrano, cipolle di Tropea al Barbera, grana.</p>
+            <span class="tag tag-accent">Speciale Langhe</span>
+          </article>
+
+          <article class="pizza-card" data-category="bianche">
+            <div class="pizza-head"><h3>Bianca con Crudo</h3><span class="price">13€</span></div>
+            <p class="ingredients">Fior di latte, crudo di Cuneo, scaglie di grana, rucola, olio EVO.</p>
+            <span class="tag">Bianca</span>
+          </article>
+          <article class="pizza-card" data-category="bianche">
+            <div class="pizza-head"><h3>Patate & Rosmarino</h3><span class="price">11€</span></div>
+            <p class="ingredients">Fior di latte, patate a fettine sottili, rosmarino, sale grosso, olio EVO.</p>
+            <span class="tag">Bianca</span>
+          </article>
+          <article class="pizza-card" data-category="bianche">
+            
+            <div class="pizza-head"><h3>Tartufata</h3><span class="price">20€</span></div>
+            <p class="ingredients">Fior di latte, fontina, uovo, scaglie di tartufo nero delle Langhe.</p>
+            <span class="tag">Bianca</span>
+          </article>
+          <article class="pizza-card" data-category="bianche">
+            <div class="pizza-head"><h3>Salsiccia & Stracchino</h3><span class="price">13€</span></div>
+            <p class="ingredients">Fior di latte, stracchino cremoso, salsiccia di Bra sbriciolata.</p>
+            <span class="tag">Bianca</span>
+          </article>
+        </div>
+
+        <p class="menu-note small muted">Allergie o intolleranze? Parlane con noi al banco: troviamo sempre una soluzione. Impasto e ingredienti possono variare in base alla stagione.</p>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div class="container cta-inner">
+        <div>
+          <h2>Ti aspettiamo per cena.</h2>
+          <p>Chiamaci per asporto, consegna a domicilio o semplicemente per chiedere informazioni.</p>
+        </div>
+        <a href="tel:+393381653446" class="btn btn-primary btn-lg">📞 338 165 3446</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo logo-footer">
+          <span class="logo-mark">F</span>
+          <span class="logo-text">Fà ch'et n'abi<small>Bar · Pizzeria · Langhe</small></span>
+        </div>
+        <p class="small muted">Clara, Anna & Elena — Piazza della Chiesa, 1 · 12070 Gorzegno (CN)</p>
+      </div>
+      <div>
+        <h4>Esplora</h4>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu Pizze</a>
+        <a href="index.html#info">Orari</a>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <a href="tel:+393381653446">📞 338 165 3446</a>
+        <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Bar+Pizzeria+Fà+ch'et+n'abi+Gorzegno">📍 Google Maps</a>
+      </div>
+      <div>
+        <h4>Legale</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+        <a href="#" id="openCookiePrefs">Preferenze cookie</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Bar Pizzeria Fà ch'et n'abi · Tutti i diritti riservati</div>
+  </footer>
+
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Informativa sui cookie" hidden>
+    <div class="cookie-inner">
+      <div class="cookie-text">
+        <strong>🍪 Usiamo solo cookie tecnici essenziali</strong>
+        <p>Questo sito utilizza esclusivamente cookie tecnici necessari al funzionamento. Non utilizziamo cookie di profilazione né strumenti di tracciamento di terze parti. Consulta la <a href="cookie-policy.html">Cookie Policy</a> e la <a href="privacy.html">Privacy Policy</a>.</p>
+      </div>
+      <div class="cookie-actions">
+        <button class="btn btn-ghost" id="cookieReject" type="button">Rifiuta opzionali</button>
+        <button class="btn btn-primary" id="cookieAccept" type="button">Ho capito</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
